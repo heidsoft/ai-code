@@ -1,0 +1,21 @@
+{
+    "llm": {
+        "provider": "anthropic",
+        "api_key": "your-api-key-here",
+        "model": "claude-sonnet-4-20250514",
+        "base_url": ""
+    },
+    "tools": {
+        "alert_api_base": "https://your-alert-api.example.com",
+        "alert_api_key": "your-alert-api-key",
+        "ticket_api_base": "https://your-ticket-api.example.com",
+        "ticket_api_key": "your-ticket-api-key",
+        "ecom_api_base": "https://your-ecom-api.example.com",
+        "ecom_api_key": "your-ecom-api-key",
+        "allowed_commands": ["ls", "cat", "grep", "curl"],
+        "blocked_commands": ["rm -rf /", "dd if="]
+    },
+    "system_prompt": "你是一个运维助手，帮助处理告警和工单。",
+    "max_turns": 50,
+    "max_budget_usd": 10.0
+}
